@@ -5,8 +5,6 @@ import datetime
 import os
 import subprocess
 
-import evaluatePredictions as ep
-
 def experiment_sweep(ngrams, lrs, dims, wss, epochs, losses):
     starttime = datetime.datetime.now()
     print('Start:\t', starttime)    

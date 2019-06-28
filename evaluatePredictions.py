@@ -15,7 +15,7 @@ def score_labels(test_labels, predict_labels, label_set):
     print('precision: {}'.format(precision.mean()))
     print('recall: {}'.format(recall.mean()))
     print('fscore: {}'.format(fscore.mean()))
-    print('support: {}'.format(support))
+#     print('support: {}'.format(support))
     
     return precision, recall, fscore, support
 
