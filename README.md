@@ -11,7 +11,7 @@ For text classification, FastText essentially measures the probablity of associa
   
   
 ## Data  
-Data for this project came from Scikit Learn's [20 Newsgroups Text Dataset](https://scikit-learn.org/0.19/datasets/twenty_newsgroups.html) . As described in the [source documentation](http://qwone.com/~jason/20Newsgroups/) of this dataset, there are 20 different news groups associated with 6 different topics.  
+Data for this project came from SkLearn's [20 Newsgroups Text Dataset](https://scikit-learn.org/0.19/datasets/twenty_newsgroups.html) . As described in the [source documentation](http://qwone.com/~jason/20Newsgroups/) of this dataset, there are 20 different news groups associated with 6 different topics.  
   
   
 <img src="https://github.com/janniec/Hierarchical_Text_Classification/blob/master/images/2-TableII-1.png" alt="Dimensions" align="middle" height=600px>  
@@ -29,12 +29,12 @@ See [Tiered_Text_Classification.ipynb](https://github.com/janniec/Hierarchical_T
   * FastText  
   * SpaCy  
   * Regex   
-  * Scikit Learn  
+  * SkLearn  
   * Klepto  
     
   
 ## Pipeline  
-1. Load 20 newsgroup dataset without headers and footers from Scikit Learn.  
+1. Load 20 newsgroup dataset without headers and footers from SkLearn.  
 2. Clean & tier the labels and targets.  
 3. Clean & preprocess the texts.  
       * Remove data points with virtually no text & duplicates.  
@@ -49,4 +49,4 @@ See [Tiered_Text_Classification.ipynb](https://github.com/janniec/Hierarchical_T
 ## Next Steps  
 Natural Langauge Processing projects generally require large amounts of data, which are almost always in shortage. Next steps will be to gauge FastText's performance at varying amounts of training data against varying amounts of holdout data.  
   
-In addition, FastText has option to predict not only labels but also probabilities of labels. Next steps may include cleaning up predictions, especially false positives, by setting thresholds on prediction probabilities. 
+In addition, FastText has the ability to output not only predicted labels but also probabilities of associated with predictions. Next steps may include cleaning up predictions, especially false positives, by setting thresholds on prediction probabilities. 
